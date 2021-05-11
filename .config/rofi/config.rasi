@@ -1,0 +1,6 @@
+configuration {
+	modi: "window,run,ssh,file-browser,combi";
+	columns: 2;
+	//show-icons: true;
+	//icon-theme: "numix-icon-theme-circle";
+}

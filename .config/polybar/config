@@ -1,0 +1,224 @@
+[colors]
+background = #e8b99d
+foreground = #371a1c
+primary = #371a1c
+secondary = #65a2d9
+tertiary = #d07ef2
+fourth = #e5c246c
+alert = #371a1c
+
+[bar/main]
+monitor = HDMI-0
+width = 100%:-30
+offset-x = 15
+offset-y = 15
+
+height = 36
+radius = 0.0
+
+override-redirect = true
+wm-restack = i3
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+padding-left = 1
+padding-right = 2
+module-margin-left = 2
+module-margin-right = 1
+
+font-0 = Hack Nerd Font:pixelsize=11:antialias=true;2.5
+font-1 = Hack Nerd Font:style=Regular:pixelsize=17:antialias=true;3
+
+modules-left = bspwm
+modules-center = xwindow
+modules-right = audio wlan battery date powermenu
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/main2]
+monitor = DP-4
+width = 100%:-30
+offset-x = 15
+offset-y = 15
+
+height = 36
+radius = 0.0
+
+override-redirect = true
+wm-restack = i3
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+padding-left = 1
+padding-right = 2
+module-margin-left = 2
+module-margin-right = 1
+
+font-0 = Hack Nerd Font:pixelsize=11:antialias=true;2.5
+font-1 = Hack Nerd Font:style=Regular:pixelsize=17:antialias=true;3
+
+modules-left = bspwm
+modules-center = xwindow
+modules-right = audio wlan battery date powermenu
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+
+
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:25:...%
+
+
+[module/filesystem]
+type = internal/fs
+interval = 25111
+mount-0 = /
+label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground}
+
+
+[module/backlight]
+type = internal/backlight
+card = radeon_bl0
+
+format = <label>
+label = "  %percentage%%"
+label-foreground = ${colors.tertiary}
+
+
+[module/wlan]
+type = internal/network
+interface = wlan0
+interval = 3.0
+
+format-connected = <label-connected>
+format-connected-underline = #9f78e1
+label-connected = "直"
+label-connected-foreground = ${colors.primary}
+
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${self.format-connected-underline}
+label-disconnected = 睊
+label-disconnected-foreground = ${colors.alert}
+
+; a = worst
+ramp-signal-0 = a
+ramp-signal-1 = b
+ramp-signal-2 = c
+ramp-signal-3 = d
+ramp-signal-4 = e
+
+
+[module/date]
+type = internal/date
+interval = 1
+
+date =
+date-alt = "%b %d, %Y  "
+time = "%I:%M"
+time-alt = "%H:%M:%S"
+
+format-prefix-foreground = ${colors.foreground}
+format-underline = #0a6cf5
+label = %date%%time%
+
+
+[module/audio]
+type = internal/pulseaudio
+
+format-volume = <ramp-volume>
+label-volume-foreground = #371a1c
+ramp-volume-foreground = #371a1c
+
+label-volume = 
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+
+label-muted = ﱝ
+label-muted-foreground = #371a1c
+
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = ADP0
+full-at = 98
+
+format-charging = <ramp-capacity>
+format-discharging = <ramp-capacity>
+
+label-full =  
+label-full-foreground = ${colors.fourth}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-5 = 
+ramp-capacity-6 = 
+ramp-capacity-7 = 
+ramp-capacity-8 = 
+ramp-capacity-9 = 
+ramp-capacity-foreground = ${colors.fourth}
+
+label-discharging =
+label-discharging-foreground = ${colors.fourth}
+label-charging-foreground = ${colors.fourth}
+
+[module/powermenu]
+type = custom/text
+format-spacing = 1
+content = 
+content-foreground = ${colors.alert}
+click-left = bash ~/scripts/rofi/launch.sh powermenu
+
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency =true
+
+[global/wm]
+margin-bottom = 20
+
+
+
+[module/bspwm]
+type = internal/bspwm
+pin-workspaces = false
+
+label-focused = %name%
+label-focused-foreground= ${foreground}
+label-focused-underline= ${primary}
+label-focused-padding = 3
+
+label-occupied = %name%
+label-occupied-padding = 3
+
+label-urgent = %name%!
+label-urgent-background = ${primary}
+label-urgent-padding = 3
+
+label-empty = %name%
+label-empty-foreground = ${foreground}
+label-empty-padding = 3
+
+; Separator in between workspaces
+label-separator = |
+label-separator-foreground= ${foreground}
+
+
+

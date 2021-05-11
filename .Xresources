@@ -1,0 +1,66 @@
+! __   __                                                              
+!/\ \ /\ \                                                             
+!\ `\`\/'/'  _ __    __    ____    ___   __  __    ___     __    ____  
+! `\/ > <   /\`'__\/'__`\ /',__\  / __`\/\ \/\ \  /'___\ /'__`\ /',__\ 
+! __ \/'/\`\\ \ \//\  __//\__, `\/\ \L\ \ \ \_\ \/\ \__//\  __//\__, `\
+!/\_\/\_\\ \_\ \_\\ \____\/\____/\ \____/\ \____/\ \____\ \____\/\____/
+!\/_/\/_/ \/_/\/_/ \/____/\/___/  \/___/  \/___/  \/____/\/____/\/___/ 
+
+!Copy paste bindings
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.keysym.Control-Meta-C: builtin-string: 
+URxvt.keysym.Control-Meta-V: builtin-string: 
+URxvt.iso14755: false
+
+!General settings
+URxvt.scrollBar: false
+!URxvt.internalBorder:  0
+URxvt*font: xft:Hack Nerd Font Mono:size=10, xft:M+ 1c
+URxvt.cursorBlink: True
+
+!ROFI SETUP
+rofi.hide-scrollbar: true
+
+!Transparency
+URxvt*transparent: true
+URxvt*shading: 30
+
+!COLORSCHMES
+! special
+*.foreground:   #f2d6c5
+*.background:   #9087a6
+*.cursorColor:  #f2d6c5
+
+! black
+*.color0:       #69312b
+*.color8:       #f2d6c5
+
+! red
+*.color1:       #f2d6c5
+*.color9:       #f2d6c5
+
+! green
+*.color2:       #f2d6c5
+*.color10:      #f2d6c5
+
+! yellow
+*.color3:       #d9ad94
+*.color11:      #f2d6c5
+
+! blue
+*.color4:       #d9ad94
+*.color12:      #f2d6c5
+
+! magenta
+*.color5:       #d9ad94
+*.color13:      #f2d6c5
+
+! cyan
+*.color6:       #a18070
+*.color14:      #f2d6c5
+
+! white
+*.color7:       #a18070
+*.color15:      #f2d6c5
+

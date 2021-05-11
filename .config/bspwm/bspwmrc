@@ -1,0 +1,31 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor DP-4 -n left
+bspc monitor HDMI-0 -n center
+
+bspc monitor left -d I II III
+bspc monitor center -d IV V VI
+
+bspc config top_padding 	50
+bspc config border_width         2
+bspc config window_gap          12
+bspc config border_radius 15
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+bspc config focus_follows_pointer false
+wmname LG3D
+
+$HOME/.config/polybar/launch.sh
+
+
