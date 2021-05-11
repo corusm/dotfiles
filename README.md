@@ -29,10 +29,10 @@ This is the software I use in this setup.
 |lock|gllock|
 
 # themes
-This color scheme is inspired by the ![Sør-Helgeland](https://www.behance.net/gallery/24075785/Soer-Helgeland) collage. This is where the background is from.
+This color scheme is inspired by the [Sør-Helgeland](https://www.behance.net/gallery/24075785/Soer-Helgeland) collage. This is where the background is from.
 
 # gaming 
-For gaming I use the game launcher ![lutris](https://lutris.net/) with a ![custom proton version](https://github.com/GloriousEggroll/proton-ge-custom) by GloriousEggroll. In addition to that I use ![MangoHUD](https://github.com/flightlessmango/MangoHud) for monitoring my FPS and system utilization.
+For gaming I use the game launcher [lutris](https://lutris.net/) with a [custom proton version](https://github.com/GloriousEggroll/proton-ge-custom) by GloriousEggroll. In addition to that I use [MangoHUD](https://github.com/flightlessmango/MangoHud) for monitoring my FPS and system utilization.
 
 # work
 For work I use the following Software.
@@ -40,12 +40,12 @@ For work I use the following Software.
 |-------|----|
 |Office Apps|Libre Office|
 |University Hub|Notion|
-|Scientific Papers|Overleaf ![(self hostet)](https://corusm.de/blog/sharelatex.html)|
+|Scientific Papers|Overleaf [(self hostet)](https://corusm.de/blog/sharelatex.html)|
 |Calendar|Minetime|
 |E-Mail|Mailspring|
 
 # mobile
-My mobile phone (![Fairphone 3+](https://www.fairphone.com)) setup is also inspired by ![Sør-Helgeland](https://www.behance.net/gallery/24075785/Soer-Helgeland), here some insights.
+My mobile phone ([Fairphone 3+](https://www.fairphone.com)) setup is also inspired by [Sør-Helgeland](https://www.behance.net/gallery/24075785/Soer-Helgeland), here some insights.
 
 In addition to that I made a little flutter app for controlling my desktop from my phone.
 
