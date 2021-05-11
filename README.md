@@ -46,11 +46,10 @@ For work I use the following Software.
 
 # mobile
 My mobile phone (![Fairphone 3+](https://www.fairphone.com)) setup is also inspired by ![Sør-Helgeland](https://www.behance.net/gallery/24075785/Soer-Helgeland), here some insights.
-![android-setup](Pictures/phone.png)
 
 In addition to that I made a little flutter app for controlling my desktop from my phone.
-![arch-control](Pictures/arch-control.png)
 
+<img src="Pictures/phone.png" height="800"/> <img src="Pictures/arch-control.png" height="800"/> 
 
 # images
 ![drun](Pictures/drun.png)
