@@ -35,12 +35,12 @@ This color scheme is inspired by the [Sør-Helgeland](https://www.behance.net/ga
 For gaming I use the game launcher [lutris](https://lutris.net/) with a [custom proton version](https://github.com/GloriousEggroll/proton-ge-custom) by GloriousEggroll. In addition to that I use [MangoHUD](https://github.com/flightlessmango/MangoHud) for monitoring my FPS and system utilization.
 
 # work
-For work I use the following Software.
+For work I use the following Software:
 |Category|Name|
 |-------|----|
 |Office Apps|Libre Office|
 |University Hub|Notion|
-|Scientific Papers|Overleaf [(self hostet)](https://corusm.de/blog/sharelatex.html)|
+|Scientific Papers|Overleaf [(self hosted)](https://corusm.de/blog/sharelatex.html)|
 |Calendar|Minetime|
 |E-Mail|Mailspring|
 
