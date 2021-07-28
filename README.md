@@ -4,6 +4,8 @@
 
 These are the configs of my main arch linux desktop.
 
+This Repo is containing the Dotfiles of [this Reddit Post](https://www.reddit.com/r/unixporn/comments/nbanhk/bspwm_s%C3%B8rhelgeland/).
+
 # contents
 1. [basic software](#basic-software)
 2. [themes](#themes)
